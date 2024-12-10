@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,11 +7,11 @@
     <style>
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100vh;
+        margin: 0;
         background-color: #f8fafc;
         color: #333;
       }
@@ -20,131 +20,111 @@
         text-align: center;
         padding: 40px;
         background-color: #fff;
-        border-radius: 16px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-        width: 80%;
-        max-width: 1200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
       }
 
       h1 {
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 700;
         color: #333;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
       }
 
       p {
-        font-size: 16px;
-        color: #555;
-        margin-bottom: 32px;
-        max-width: 800px;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 24px;
       }
 
       input[type="text"] {
-        width: 60%;
-        padding: 16px;
+        width: 100%;
+        padding: 12px;
         border: 1px solid #ddd;
         border-radius: 8px;
-        font-size: 16px;
-        margin-bottom: 24px;
+        font-size: 14px;
+        margin-bottom: 16px;
         box-sizing: border-box;
       }
 
       input[type="text"]:focus {
         border-color: #007bff;
         outline: none;
-        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
       }
 
       .shortcut-buttons {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        width: 100%;
-        max-width: 800px;
-        margin-bottom: 24px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 16px;
       }
 
       .shortcut-buttons button {
-        padding: 16px;
-        font-size: 16px;
+        padding: 12px;
+        font-size: 14px;
         background-color: #e9ecef;
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s;
+        transition: background-color 0.3s;
         color: #333;
       }
 
       .shortcut-buttons button:hover {
         background-color: #ced4da;
-        transform: scale(1.05);
       }
 
       button.primary {
-        width: 60%;
-        padding: 16px;
-        font-size: 16px;
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
         color: #fff;
         background-color: #007bff;
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        margin-bottom: 16px;
-        transition: background-color 0.3s, transform 0.2s;
+        margin-bottom: 12px;
+        transition: background-color 0.3s;
       }
 
       button.primary:hover {
         background-color: #0056b3;
-        transform: scale(1.05);
       }
 
       button.secondary {
-        width: 60%;
-        padding: 16px;
-        font-size: 16px;
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
         color: #fff;
         background-color: #6c757d;
         border: none;
         border-radius: 8px;
         cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s;
+        transition: background-color 0.3s;
       }
 
       button.secondary:hover {
         background-color: #5a6268;
-        transform: scale(1.05);
       }
 
       footer {
-        margin-top: 40px;
-        font-size: 14px;
+        margin-top: 20px;
+        font-size: 12px;
         color: #aaa;
-      }
-
-      @media (max-width: 768px) {
-        input[type="text"], button.primary, button.secondary {
-          width: 90%;
-        }
-
-        .shortcut-buttons {
-          grid-template-columns: repeat(2, 1fr);
-        }
       }
     </style>
   </head>
   <body>
     <div class="container">
       <h1>File Organizer</h1>
-      <p>Automatically organize your files into predefined categories with ease.</p>
+      <p>Automatically organize your files by categories</p>
 
       <input
         type="text"
         id="directoryPath"
-        placeholder="Enter directory path or leave blank for default"
+        placeholder="Enter directory path"
       />
 
       <div class="shortcut-buttons">
@@ -161,5 +141,150 @@
         Developed by Sparsh Sharma
       </footer>
     </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoldStruct</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8fafc;
+        color: #333;
+      }
+      .container {
+        text-align: center;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 24px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 14px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+
+      input[type="text"]:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+
+      .shortcut-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+      }
+
+      .shortcut-buttons button {
+        padding: 12px;
+        font-size: 14px;
+        background-color: #e9ecef;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        color: #333;
+      }
+
+      .shortcut-buttons button:hover {
+        background-color: #ced4da;
+      }
+
+      button.primary {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 12px;
+        transition: background-color 0.3s;
+      }
+
+      button.primary:hover {
+        background-color: #0056b3;
+      }
+
+      button.secondary {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #6c757d;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button.secondary:hover {
+        background-color: #5a6268;
+      }
+
+      footer {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>File Organizer</h1>
+      <p>Automatically organize your files by categories.</p>
+      <p>
+        Enter the directory path where you want to organize files, or use the
+        default Downloads folder.
+      </p>
+      <input
+        type="text"
+        id="directoryPath"
+        placeholder="Enter directory path"
+      />
+      <button id="organizeFilesBtn" class="primary">Organize Files</button>
+      <button id="undoChangesBtn" class="secondary">Undo Changes</button>
+      <div class="shortcut-buttons">
+        <button class="shortcut" data-path="desktop">Desktop</button>
+        <button class="shortcut" data-path="downloads">Downloads</button>
+        <button class="shortcut" data-path="documents">Documents</button>
+        <button class="shortcut" data-path="pictures">Pictures</button>
+      </div>
+      <p id="output"></p>
+      <footer>Developed by Sparsh Sharma</footer>
+    </div>
+    <script src="./renderer.js"></script>
   </body>
 </html>
